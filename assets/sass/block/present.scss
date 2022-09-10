@@ -1,0 +1,60 @@
+.present {
+  display: grid;
+  margin-bottom: 80px;
+}
+
+.present__title {
+  margin-bottom: 56px;
+  width: 430px;
+  justify-self: center;
+
+  text-align: center;
+}
+
+.present__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.present__column {
+  padding: 40px;
+  background-color: $special-neutral;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.present--raspberry {
+  background-image: url(/assets/img/present/raspberry-photo.png);
+  background-position: top 28px right 15px;
+  background-size: contain;
+}
+
+.present--marshmallow {
+  background-image: url(/assets/img/present/marshmallow-photo.png);
+  background-position: top 29px right 3px;
+  background-size: 232px;
+}
+
+.present__subtitles {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $basic-extra-dark;
+}
+
+.present__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  width: 305px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-extra-dark;
+}
