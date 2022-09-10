@@ -1,0 +1,121 @@
+.main-header__wrapper {
+  min-height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $basic-extra-dark;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 137px;
+  height: 56px;
+}
+
+.nav__item {
+  margin-left: 16px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.nav__link {
+  padding: 8px 16px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 26px;
+
+  &:hover {
+    color: $basic-extra-dark;
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus {
+    outline-color: $basic-extra-dark;
+    outline-width: 2px;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+  }
+
+  &--current {
+    background-color: $special-bright;
+    color: $basic-extra-light;
+  }
+}
+
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-navigation .user-navigation__button {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 26px;
+  background-color: rgba($basic-extra-light, 0.3);
+
+  &:hover {
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus {
+    outline-color: $basic-extra-dark;
+    outline-width: 2px;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+  }
+}
+
+.user-navigation__tel {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-navigation__search {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  @include img(url(/assets/img/main-header/Search.svg));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-navigation__login::before,
+.user-navigation__cart::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  @include img(url(/assets/img/main-header/Log-in.svg));
+}
+
+.user-navigation__cart {
+  &::before {
+    @include img(url(/assets/img/main-header/cart.svg));
+  }
+
+  &:active::before {
+    @include img(url(/assets/img/main-header/Cart.svg));
+  }
+}
