@@ -14,3 +14,11 @@
   font-weight: bold;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter-Black.ttf) format("truetype"),
+    url(../font/Inter-Black.woff) format("woff");
+  font-weight: 900;
+  font-display: swap;
+}

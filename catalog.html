@@ -21,7 +21,54 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="page__body">
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="container main-header__wrapper">
+        <nav class="main-header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__logo">
+                <img
+                  src="assets/img/main-header/logo.svg"
+                  alt="Gllacy"
+                  width="137"
+                  height="56"
+                />
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link nav__link--current">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__user-navigation user-navigation">
+          <a href="tel:+78005558628" class="user-navigation__tel">
+            +7 800 555-86-28
+          </a>
+          <button class="user-navigation__button user-navigation__search">
+            <span class="visually-hidden">Поиск</span>
+          </button>
+          <div class="user-navigation__poppap-search">
+            <input type="search" name="" id="" />
+          </div>
+          <button class="user-navigation__button user-navigation__login">
+            Вход
+          </button>
+          <div class="user-navigation__poppap-login"></div>
+          <button class="user-navigation__button user-navigation__cart">
+            2 товара
+          </button>
+          <div class="user-navigation__poppap-cart"></div>
+        </div>
+      </div>
+    </header>
     <main class="page__main"></main>
     <footer class="main-footer"></footer>
     <script src="assets/js/script.js"></script>
