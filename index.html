@@ -21,7 +21,109 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="page__body container">
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__logo">
+                <img
+                  src="assets/img/main-header/logo.svg"
+                  alt="Gllacy"
+                  width="137"
+                  height="56"
+                />
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link">
+                Каталог
+              </a>
+              <div class="poppap nav__poppap-catalog popppap-catalog">
+                <ul class="popppap-catalog__list">
+                  <li class="popppap-catalog__item">
+                    <b class="popppap-catalog__tagline">Новинки</b>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Сливочное</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Щербеты</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Фруктовый лед</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__user-navigation user-navigation">
+          <a href="tel:+78005558628" class="user-navigation__tel">
+            +7 800 555-86-28
+          </a>
+          <button class="user-navigation__button user-navigation__search">
+            <span class="visually-hidden">Поиск</span>
+          </button>
+
+          <div class="poppap user-navigation__poppap-search poppap-search">
+            <input
+              type="search"
+              placeholder="Поиск по сайту"
+              class="input poppap-search__search"
+            />
+          </div>
+
+          <button class="user-navigation__button user-navigation__login">
+            Вход
+          </button>
+
+          <div class="poppap user-navigation__poppap-login poppap-login">
+            <h3 class="poppap-login__title">Личный кабинет</h3>
+            <form action="" method="post" class="poppap-login__form">
+              <input
+                type="email"
+                name="email"
+                id="poppap-login__email"
+                class="input poppap-login__email"
+                placeholder="email@example.com"
+              />
+              <input
+                type="password"
+                name="password"
+                id="poppap-login__password"
+                class="input poppap-login__password"
+                placeholder="******"
+              />
+              <div class="poppap-login__wrapper">
+                <button type="submit" class="button poppap-login__submit">
+                  Войти
+                </button>
+                <a href="" class="poppap-login__link">Забыли пароль?</a>
+                <a href="" class="poppap-login__link">Регистрация</a>
+              </div>
+            </form>
+          </div>
+
+          <button class="user-navigation__button user-navigation__cart">
+            Пусто
+          </button>
+
+          <div class="poppap user-navigation__poppap-cart poppap-cart">
+            <h3 class="poppap-cart__title">Ваша корзина пока пуста</h3>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="page__main">
       <h1 class="visually-hidden">Магазин с морожеными Gllacy</h1>
 
