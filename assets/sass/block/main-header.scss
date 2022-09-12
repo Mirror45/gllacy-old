@@ -57,6 +57,7 @@
 }
 
 .user-navigation {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -118,4 +119,30 @@
   &:active::before {
     @include img(url(/assets/img/main-header/Cart.svg));
   }
+}
+
+.user-navigation .input {
+  display: inline-block;
+  width: 324px;
+  height: 48px;
+  padding: 14px 16px;
+  border: 1px solid $basic-neutral;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $basic-neutral;
+  }
+}
+
+.user-navigation__poppap-search {
+  bottom: -6px - 96;
+  left: -43%;
+}
+
+.poppap-search__search {
+  margin: 24px 16px;
 }

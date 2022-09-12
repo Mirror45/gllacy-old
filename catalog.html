@@ -55,17 +55,55 @@
           <button class="user-navigation__button user-navigation__search">
             <span class="visually-hidden">Поиск</span>
           </button>
-          <div class="user-navigation__poppap-search">
-            <input type="search" name="" id="" />
+
+          <div class="poppap user-navigation__poppap-search poppap-search">
+            <input
+              type="search"
+              placeholder="Поиск по сайту"
+              class="input poppap-search__search"
+            />
           </div>
+
           <button class="user-navigation__button user-navigation__login">
             Вход
           </button>
-          <div class="user-navigation__poppap-login"></div>
+
+          <div
+            class="poppap poppap--active user-navigation__poppap-login poppap-login"
+          >
+            <h3 class="poppap-login__title">Личный кабинет</h3>
+            <form action="" method="post" class="poppap-login__form">
+              <input
+                type="email"
+                name="email"
+                id="poppap-login__email"
+                class="input poppap-login__email"
+                placeholder="email@example.com"
+              />
+              <input
+                type="password"
+                name="password"
+                id="poppap-login__password"
+                class="input poppap-login__password"
+              />
+              <div class="poppap-login__wrapper">
+                <button
+                  type="submit"
+                  class="button button--accent poppap-login__submit"
+                >
+                  Войти
+                </button>
+                <a href="" class="poppap-login__link">Забыли пароль?</a>
+                <a href="" class="poppap-login__link">Регистрация</a>
+              </div>
+            </form>
+          </div>
+
           <button class="user-navigation__button user-navigation__cart">
             2 товара
           </button>
-          <div class="user-navigation__poppap-cart"></div>
+
+          <div class="poppap user-navigation__poppap-cart"></div>
         </div>
       </div>
     </header>
