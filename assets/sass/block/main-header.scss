@@ -173,16 +173,9 @@
   display: inline-block;
   width: 324px;
   height: 48px;
-  padding: 14px 16px;
-  border: 1px solid $basic-neutral;
-  border-radius: 4px;
 
   &:focus {
     outline: none;
-  }
-
-  &::placeholder {
-    color: $basic-neutral;
   }
 }
 
@@ -267,7 +260,7 @@
 
 .page__catalog .poppap-cart__title {
   width: auto;
-  text-align-last: left;
+  text-align: left;
 }
 
 .poppap-cart__list {
