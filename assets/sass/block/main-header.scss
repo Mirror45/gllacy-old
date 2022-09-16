@@ -180,8 +180,8 @@
 }
 
 .user-navigation__poppap-search {
-  bottom: -102px;
-  left: -43%;
+  top: 40px;
+  left: -180px;
 }
 
 .poppap-search__search {
@@ -189,8 +189,12 @@
 }
 
 .user-navigation__poppap-login {
-  bottom: -310px;
-  right: 32%;
+  top: 40px;
+  right: 115px;
+}
+
+.page__catalog .user-navigation__poppap-login {
+  right: 135px;
 }
 
 .poppap-login {
@@ -234,10 +238,6 @@
 .user-navigation__poppap-cart {
   top: 40px;
   right: 0;
-}
-
-.page__catalog .user-navigation__cart {
-  left: -6%;
 }
 
 .poppap-cart {

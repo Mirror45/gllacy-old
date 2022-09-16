@@ -11,6 +11,14 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+  &--slide-2 {
+    background-color: $special-blue;
+  }
+
+  &--slide-3 {
+    background-color: $special-yellow;
+  }
 }
 
 img {
@@ -41,6 +49,7 @@ img {
 
   &--active {
     display: block;
+    z-index: 99;
   }
 }
 
