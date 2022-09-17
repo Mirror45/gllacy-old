@@ -21,8 +21,10 @@ const userNavigation__cart = document.querySelector(".user-navigation__cart");
 const userNavigation__poppapCart = document.querySelector(
   ".user-navigation__poppap-cart"
 );
+const nav__catalog = document.querySelector(".nav__catalog");
 const nav__poppapCatalog = document.querySelector(".nav__poppap-catalog");
 
 userNavigation__search.onclick = () => poppap(userNavigation__poppapSearch);
 userNavigation__login.onclick = () => poppap(userNavigation__poppapLogin);
 userNavigation__cart.onclick = () => poppap(userNavigation__poppapCart);
+nav__catalog.onclick = () => poppap(nav__poppapCatalog);
