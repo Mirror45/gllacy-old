@@ -57,14 +57,6 @@
   }
 }
 
-.nav__catalog:hover .nav__poppap-catalog {
-  display: block;
-  position: absolute;
-  background-color: $basic-extra-light;
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
-  border-radius: 4px;
-}
-
 .nav__poppap-catalog {
   padding: 16px 0;
   top: 32px;
