@@ -1,8 +1,8 @@
 const poppap = (e) => {
-  const poppapActive = document.querySelectorAll("poppap--active");
-  for (let i = 0; i < poppapActive.length; i++) {
-    if (poppapActive[i] == e) continue;
-    poppapActive[i].classList.remove("poppap--active");
+  const poppapActive = document.querySelectorAll(".poppap--active");
+  for (let i of poppapActive) {
+    if (i == e) continue;
+    i.classList.remove("poppap--active");
   }
   e.classList.toggle("poppap--active");
 };
@@ -27,4 +27,10 @@ const nav__poppapCatalog = document.querySelector(".nav__poppap-catalog");
 userNavigation__search.onclick = () => poppap(userNavigation__poppapSearch);
 userNavigation__login.onclick = () => poppap(userNavigation__poppapLogin);
 userNavigation__cart.onclick = () => poppap(userNavigation__poppapCart);
-nav__catalog.onclick = () => poppap(nav__poppapCatalog);
+nav__catalog.onmouseover = () => {
+  nav__poppapCatalog.classList.add("poppap--active");
+};
+nav__catalog.onmouseout = () => {
+  nav__poppapCatalog.classList.remove("poppap--active");
+};
+// .elementFromPoint()
