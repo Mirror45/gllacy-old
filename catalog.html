@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="assets/css/libs/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body page__catalog container">
     <header class="main-header">
-      <div class="container main-header__wrapper">
+      <div class="main-header__wrapper">
         <nav class="main-header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -35,10 +35,29 @@
                 />
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__catalog">
               <a href="catalog.html" class="nav__link nav__link--current">
                 Каталог
               </a>
+              <div class="poppap nav__poppap-catalog popppap-catalog">
+                <ul class="popppap-catalog__list">
+                  <li class="popppap-catalog__item">
+                    <b class="popppap-catalog__tagline">Новинки</b>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Сливочное</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Щербеты</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Фруктовый лед</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Доставка и оплата</a>
@@ -55,21 +74,237 @@
           <button class="user-navigation__button user-navigation__search">
             <span class="visually-hidden">Поиск</span>
           </button>
-          <div class="user-navigation__poppap-search">
-            <input type="search" name="" id="" />
+
+          <div class="poppap user-navigation__poppap-search poppap-search">
+            <input
+              type="search"
+              placeholder="Поиск по сайту"
+              class="input poppap-search__search"
+            />
           </div>
+
           <button class="user-navigation__button user-navigation__login">
             Вход
           </button>
-          <div class="user-navigation__poppap-login"></div>
+
+          <div class="poppap user-navigation__poppap-login poppap-login">
+            <h3 class="poppap-login__title">Личный кабинет</h3>
+            <form action="" method="post" class="poppap-login__form">
+              <input
+                type="email"
+                name="email"
+                id="poppap-login__email"
+                class="input poppap-login__email"
+                placeholder="email@example.com"
+              />
+              <input
+                type="password"
+                name="password"
+                id="poppap-login__password"
+                class="input poppap-login__password"
+                placeholder="******"
+              />
+              <div class="poppap-login__wrapper">
+                <button type="submit" class="button poppap-login__submit">
+                  Войти
+                </button>
+                <a href="" class="poppap-login__link">Забыли пароль?</a>
+                <a href="" class="poppap-login__link">Регистрация</a>
+              </div>
+            </form>
+          </div>
+
           <button class="user-navigation__button user-navigation__cart">
             2 товара
           </button>
-          <div class="user-navigation__poppap-cart"></div>
+
+          <div class="poppap user-navigation__poppap-cart poppap-cart">
+            <h3 class="poppap-cart__title">Корзина</h3>
+            <ul class="poppap-cart__list">
+              <li class="poppap-cart__item">
+                <img
+                  src="assets/img/main-header/Фото-1.jpg"
+                  alt="Малинка"
+                  class="poppap-cart__img"
+                  width="46"
+                  height="46"
+                />
+                <div>
+                  <h4 class="poppap-cart__tagline">Малинка</h4>
+                  <p class="poppap-cart__info">1 кг х 310 ₽</p>
+                </div>
+                <b class="poppap-cart__price">310 ₽</b>
+              </li>
+              <li class="poppap-cart__item">
+                <img
+                  src="assets/img/main-header/Фото.jpg"
+                  alt="Бабл-гам"
+                  class="poppap-cart__img"
+                  width="46"
+                  height="46"
+                />
+                <div>
+                  <h4 class="poppap-cart__tagline">Бабл-гам</h4>
+                  <p class="poppap-cart__info">1,5 кг х 320 ₽</p>
+                </div>
+                <b class="poppap-cart__price">480 ₽</b>
+              </li>
+            </ul>
+            <a href="" class="button poppap-cart__button">Оформить заказ</a>
+            <b class="poppap-cart__price">Итого: 790 ₽</b>
+          </div>
         </div>
       </div>
     </header>
-    <main class="page__main"></main>
+    <main class="page__main">
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">Сливочное</li>
+        </ul>
+      </section>
+
+      <section class="filter">
+        <h1 class="title filter__title">Сливочное мороженое</h1>
+        <form action="" method="post" class="filter__form">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Сортировка:</legend>
+            <button class="filter__button-list">по популярности</button>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Цена: 100 ₽ – 500 ₽</legend>
+            <div class="filter__range range">
+              <div class="range__body">
+                <div class="range__range">
+                  <button class="range__button"></button>
+                  <button class="range__button"></button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Жирность:</legend>
+            <div class="filter__wrapper filter__wrapper--radio">
+              <label class="filter__label">
+                <input
+                  type="radio"
+                  name="radio"
+                  value="0%"
+                  class="filter__radio"
+                />
+                0%
+              </label>
+              <label class="filter__label">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="filter__radio"
+                  value="до 10%"
+                  checked
+                />
+                до 10%
+              </label>
+              <label class="filter__label">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="filter__radio"
+                  value="до 30%"
+                />
+                до 30%
+              </label>
+              <label class="filter__label">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="filter__radio"
+                  value="выше 30%"
+                />
+                выше 30%
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Наполнители:</legend>
+            <div class="filter__wrapper filter__wrapper--checkbox">
+              <label class="filter__label">
+                <input
+                  type="checkbox"
+                  name="chocolate"
+                  class="filter__checkbox"
+                  checked
+                />
+                шоколадные
+              </label>
+              <label class="filter__label">
+                <input
+                  type="checkbox"
+                  name="sugar-sprinkles"
+                  class="filter__checkbox"
+                  checked
+                />
+                сахарные посыпки
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" name="fruit" class="filter__checkbox" />
+                фрукты
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" name="syrups" class="filter__checkbox" />
+                сиропы
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" name="jams" class="filter__checkbox" />
+                джемы
+              </label>
+            </div>
+          </fieldset>
+          <button
+            type="submit"
+            class="button button--additional filter__submit"
+          >
+            Применить
+          </button>
+        </form>
+      </section>
+
+      <section class="pagination">
+        <h2 class="visually-hidden">Страницы</h2>
+        <button class="button button--accent">Показать ещё</button>
+        <div class="pagination__wrapper">
+          <button class="pagination__button" disabled>
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <ol class="pagination__list">
+            <li class="pagination__item">
+              <a href="" class="pagination__link pagination__link--current">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">5</a>
+            </li>
+          </ol>
+          <button class="pagination__button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer"></footer>
     <script src="assets/js/script.js"></script>
   </body>

@@ -11,6 +11,14 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+  &--slide-2 {
+    background-color: $special-blue;
+  }
+
+  &--slide-3 {
+    background-color: $special-yellow;
+  }
 }
 
 img {
@@ -32,34 +40,59 @@ img {
   overflow: hidden;
 }
 
+.poppap {
+  display: none;
+  position: absolute;
+  background-color: $basic-extra-light;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+
+  &--active {
+    display: block;
+    z-index: 99;
+  }
+}
+
 .container {
   width: 1366px;
   padding: 0 98px;
   margin: 0 auto;
 }
 
+.title {
+  padding: 0;
+  margin: 0;
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: $basic-extra-dark;
+}
+
 .button {
   display: inline-block;
   padding: 12px 32px;
-  color: inherit;
-  border: none;
+  color: $basic-extra-light;
   font: inherit;
+  font-weight: 700;
   text-decoration: none;
-  background-color: $basic-extra-dark;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  background-color: $special-extra-bright;
+  background-clip: padding-box;
+  border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 
   &:hover {
-    background-color: rgba(252, 252, 252, 0.4);
-    border: 4px solid $basic-extra-light;
+    color: $basic-extra-dark;
+    background-color: $basic-extra-light;
+    border: 4px solid $special-extra-bright;
     box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
   }
 
   &:focus {
-    background-color: $basic-extra-light;
     border: 2px solid $basic-extra-dark;
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    outline: none;
   }
 
   &:disabled {
@@ -69,21 +102,20 @@ img {
   }
 
   &--accent {
-    color: $basic-extra-light;
-    background-color: $special-extra-bright;
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    color: $basic-extra-dark;
+    background-color: $basic-extra-light;
+    border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 
     &:hover {
       color: $basic-extra-dark;
-      background: rgba(252, 252, 252, 0.3);
-      border: 4px solid $special-extra-bright;
-      border-radius: 26px;
+      background-color: rgba(252, 252, 252, 0.4);
+      border: 4px solid $basic-extra-light;
     }
 
     &:focus {
-      color: $basic-extra-light;
-      background-color: $special-extra-bright;
+      color: $basic-extra-dark;
+      background-color: $basic-extra-light;
       border: 2px solid $basic-extra-dark;
       box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     }
@@ -93,5 +125,35 @@ img {
       background-color: $basic-neutral;
       border: 4px solid rgba(185, 185, 185, 0.3);
     }
+  }
+
+  &--additional {
+    padding: 8px;
+    color: $basic-extra-dark;
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid $basic-extra-light;
+
+    &:hover {
+      background-color: $basic-extra-light;
+      border: 2px solid $basic-extra-light;
+    }
+
+    &:focus {
+      background-color: rgba(252, 252, 252, 0.3);
+      outline: none;
+      border-color: $basic-extra-dark;
+    }
+  }
+}
+
+.input {
+  padding: 14px 16px;
+  border: 1px solid $basic-neutral;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-neutral;
   }
 }

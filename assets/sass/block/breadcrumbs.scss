@@ -1,0 +1,27 @@
+.breadcrumbs {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: $basic-extra-dark;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.breadcrumbs__item + .breadcrumbs__item::before {
+  content: "";
+  display: inline-block;
+  margin: 0 8px;
+  width: 12px;
+  height: 12px;
+  @include img(url(/assets/img/breadcrambs/chevrons-right.svg));
+}
+
+.breadcrumbs__link {
+  color: inherit;
+}

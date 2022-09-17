@@ -1,0 +1,74 @@
+.features {
+  padding: 24px;
+  margin-bottom: 80px;
+  border-radius: 16px;
+
+  background-image: url(/assets/img/features/features-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.features__wrapper {
+  padding: 56px 40px;
+  background-color: $basic-white;
+  border-radius: 16px;
+}
+
+.features__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 56px;
+
+  text-align: center;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.features__text {
+  position: relative;
+  padding: 0;
+  padding-left: 64px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.icon--ice-cream {
+  background-image: url(/assets/img/features/ice-cream.svg);
+  background-repeat: no-repeat;
+}
+
+.icon--ice-cow {
+  background-image: url(/assets/img/features/cow.svg);
+  background-repeat: no-repeat;
+}
+
+.icon--leaf {
+  background-image: url(/assets/img/features/leaf.svg);
+  background-repeat: no-repeat;
+}
+
+.icon--thermometer {
+  background-image: url(/assets/img/features/thermometer.svg);
+  background-repeat: no-repeat;
+}
