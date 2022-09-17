@@ -30,7 +30,22 @@ userNavigation__cart.onclick = () => poppap(userNavigation__poppapCart);
 nav__catalog.onmouseover = () => {
   nav__poppapCatalog.classList.add("poppap--active");
 };
-nav__catalog.onmouseout = () => {
+nav__catalog.onmouseout = (e) => {
   nav__poppapCatalog.classList.remove("poppap--active");
 };
-// .elementFromPoint()
+
+if (!/catalog/.test(location)) {
+  let body = document.body;
+  const contacts__poppapButton = document.querySelector(
+    "#contacts__poppap-button"
+  );
+  const contactsForm = document.querySelector(".contacts-form");
+  contacts__poppapButton.onclick = () => {
+    body.classList.add("page__body--disabled");
+    contactsForm.classList.add("poppap--active");
+    contactsForm.querySelector(".contacts-form__close").onclick = () => {
+      body.classList.remove("page__body--disabled");
+      contactsForm.classList.remove("poppap--active");
+    };
+  };
+}

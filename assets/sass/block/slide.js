@@ -1,5 +1,5 @@
 if (!/catalog/.test(location)) {
-  const body = document.body;
+  body = document.body;
   const slide = (e) => {
     body.classList.remove("page__body--slide-2", "page__body--slide-3");
     body.classList.add(e);

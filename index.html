@@ -38,23 +38,25 @@
             <li class="nav__item nav__catalog">
               <a href="catalog.html" class="nav__link"> Каталог </a>
               <div class="poppap nav__poppap-catalog popppap-catalog">
-                <ul class="popppap-catalog__list">
-                  <li class="popppap-catalog__item">
-                    <b class="popppap-catalog__tagline">Новинки</b>
-                  </li>
-                  <li class="popppap-catalog__item">
-                    <a href="" class="popppap-catalog__link">Сливочное</a>
-                  </li>
-                  <li class="popppap-catalog__item">
-                    <a href="" class="popppap-catalog__link">Щербеты</a>
-                  </li>
-                  <li class="popppap-catalog__item">
-                    <a href="" class="popppap-catalog__link">Фруктовый лед</a>
-                  </li>
-                  <li class="popppap-catalog__item">
-                    <a href="" class="popppap-catalog__link">Мелорин</a>
-                  </li>
-                </ul>
+                <div class="popppap-catalog__wrapper">
+                  <ul class="popppap-catalog__list">
+                    <li class="popppap-catalog__item">
+                      <b class="popppap-catalog__tagline">Новинки</b>
+                    </li>
+                    <li class="popppap-catalog__item">
+                      <a href="" class="popppap-catalog__link">Сливочное</a>
+                    </li>
+                    <li class="popppap-catalog__item">
+                      <a href="" class="popppap-catalog__link">Щербеты</a>
+                    </li>
+                    <li class="popppap-catalog__item">
+                      <a href="" class="popppap-catalog__link">Фруктовый лед</a>
+                    </li>
+                    <li class="popppap-catalog__item">
+                      <a href="" class="popppap-catalog__link">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="nav__item">
@@ -174,7 +176,31 @@
           <button class="promo__button-toggle" id="slide-2"></button>
           <button class="promo__button-toggle" id="slide-3"></button>
         </div>
-        <div class="promo__social"></div>
+        <div class="promo__social">
+          <ul class="main-footer__social social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="/assets/img/main-footer/vk.svg" alt="VK :icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img
+                  src="/assets/img/main-footer/instagram.svg"
+                  alt="instagram :icon"
+                />
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img
+                  src="/assets/img/main-footer/facebook.svg"
+                  alt="Facebook :icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="present">
@@ -464,40 +490,44 @@
             <dd>+7 (812) 812-12-12</dd>
           </dl>
           <span class="contacts__span">(с 10 до 20 ежедневно)</span>
-          <button class="button">Форма обратной связи</button>
+          <button class="button" id="contacts__poppap-button">
+            Форма обратной связи
+          </button>
         </div>
 
-        <section class="contacts-form">
-          <h2 class="contacts-form__title">Мы обязательно ответим вам!</h2>
-          <form action="" class="contacts-form__form">
-            <input
-              type="text"
-              class="contacts-form__input input"
-              placeholder="Имя и фамилия"
-            />
-            <input
-              type="email"
-              class="contacts-form__input input"
-              placeholder="email@example.com"
-            />
-            <textarea
-              name=""
-              id=""
-              class="contacts-form__input input"
-              placeholder="В свободной форме"
-            ></textarea>
-            <button class="contacts-form__button button">Отправить</button>
-          </form>
-          <button class="contacts-form__close">
-            <span class="visually-hidden">Закрыть</span>
-            <img
-              src="/assets/img/contacts/Cross.svg"
-              width="20"
-              height="20"
-              alt="Кнопка закрыть"
-            />
-          </button>
-        </section>
+        <div class="page__overley">
+          <section class="poppap contacts-form">
+            <h2 class="contacts-form__title">Мы обязательно ответим вам!</h2>
+            <form action="" class="contacts-form__form">
+              <input
+                type="text"
+                class="contacts-form__input input"
+                placeholder="Имя и фамилия"
+              />
+              <input
+                type="email"
+                class="contacts-form__input input"
+                placeholder="email@example.com"
+              />
+              <textarea
+                name=""
+                id=""
+                class="contacts-form__input input"
+                placeholder="В свободной форме"
+              ></textarea>
+              <button class="contacts-form__button button">Отправить</button>
+            </form>
+            <button class="contacts-form__close">
+              <span class="visually-hidden">Закрыть</span>
+              <img
+                src="/assets/img/contacts/Cross.svg"
+                width="20"
+                height="20"
+                alt="Кнопка закрыть"
+              />
+            </button>
+          </section>
+        </div>
       </section>
     </main>
 

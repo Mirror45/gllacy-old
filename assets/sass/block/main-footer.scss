@@ -5,6 +5,10 @@
   padding-right: 14px;
 }
 
+.page__catalog .main-footer {
+  border-top: 1px solid rgba($basic-extra-light, 0.3);
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
