@@ -21,9 +21,161 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="page__body container">
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__logo">
+                <img
+                  src="assets/img/main-header/logo.svg"
+                  alt="Gllacy"
+                  width="137"
+                  height="56"
+                />
+              </a>
+            </li>
+            <li class="nav__item nav__catalog">
+              <a href="catalog.html" class="nav__link"> Каталог </a>
+              <div class="poppap nav__poppap-catalog popppap-catalog">
+                <ul class="popppap-catalog__list">
+                  <li class="popppap-catalog__item">
+                    <b class="popppap-catalog__tagline">Новинки</b>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Сливочное</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Щербеты</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Фруктовый лед</a>
+                  </li>
+                  <li class="popppap-catalog__item">
+                    <a href="" class="popppap-catalog__link">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__user-navigation user-navigation">
+          <a href="tel:+78005558628" class="user-navigation__tel">
+            +7 800 555-86-28
+          </a>
+          <button class="user-navigation__button user-navigation__search">
+            <span class="visually-hidden">Поиск</span>
+          </button>
+
+          <div class="poppap user-navigation__poppap-search poppap-search">
+            <input
+              type="search"
+              placeholder="Поиск по сайту"
+              class="input poppap-search__search"
+            />
+          </div>
+
+          <button class="user-navigation__button user-navigation__login">
+            Вход
+          </button>
+
+          <div class="poppap user-navigation__poppap-login poppap-login">
+            <h3 class="poppap-login__title">Личный кабинет</h3>
+            <form action="" method="post" class="poppap-login__form">
+              <input
+                type="email"
+                name="email"
+                id="poppap-login__email"
+                class="input poppap-login__email"
+                placeholder="email@example.com"
+              />
+              <input
+                type="password"
+                name="password"
+                id="poppap-login__password"
+                class="input poppap-login__password"
+                placeholder="******"
+              />
+              <div class="poppap-login__wrapper">
+                <button type="submit" class="button poppap-login__submit">
+                  Войти
+                </button>
+                <a href="" class="poppap-login__link">Забыли пароль?</a>
+                <a href="" class="poppap-login__link">Регистрация</a>
+              </div>
+            </form>
+          </div>
+
+          <button class="user-navigation__button user-navigation__cart">
+            Пусто
+          </button>
+
+          <div class="poppap user-navigation__poppap-cart poppap-cart">
+            <h3 class="poppap-cart__title">Ваша корзина пока пуста</h3>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="page__main">
       <h1 class="visually-hidden">Магазин с морожеными Gllacy</h1>
+
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="title promo__title">Нежный пломбир с клубничным джемом</h2>
+          <p class="promo__text">
+            Натуральное мороженое из свежих сливок и молока с вкуснейшим
+            клубничным джемом – это идеальный десерт для всей семьи.
+          </p>
+          <button class="button button--accent">Заказать</button>
+        </div>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <button class="promo__button-slide">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <img
+              src="assets/img/promo/Мороженко.png"
+              alt="Мороженко"
+              class="promo__img"
+              width="306"
+              height="507"
+            />
+            <button class="promo__button-slide">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </li>
+          <li class="promo__item">
+            <img
+              src="assets/img/promo/Мороженко2-small.png"
+              alt="Мороженко"
+              class="promo__img"
+              width="66"
+              height="150"
+            />
+          </li>
+          <li class="promo__item">
+            <img
+              src="assets/img/promo/Мороженко3-small.png"
+              alt="Мороженко"
+              class="promo__img"
+              width="66"
+              height="150"
+            />
+          </li>
+        </ul>
+        <div class="promo__toggle">
+          <button class="promo__button-toggle" id="slide-1"></button>
+          <button class="promo__button-toggle" id="slide-2"></button>
+          <button class="promo__button-toggle" id="slide-3"></button>
+        </div>
+        <div class="promo__social"></div>
+      </section>
 
       <section class="present">
         <h2 class="present__title title">
@@ -36,7 +188,7 @@
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.
             </p>
-            <button class="button">Хочу подарок</button>
+            <button class="button button--accent">Хочу подарок</button>
           </div>
           <div class="present__column present--marshmallow">
             <h3 class="present__subtitles">Маршмеллоу даром!</h3>
@@ -44,7 +196,7 @@
               При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
               зефирок совершенно бесплатно.
             </p>
-            <button class="button">Хочу подарок</button>
+            <button class="button button--accent">Хочу подарок</button>
           </div>
         </div>
       </section>
@@ -64,34 +216,34 @@
       <section class="features">
         <h2 class="visually-hidden">Особенности магазина Gllacy</h2>
         <div class="features__wrapper">
-          <h3 class="features__title title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
-            собственного проиводства на развес</h3>
-            
+          <h3 class="features__title title">
+            Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+            собственного проиводства на развес
           </h3>
           <ul class="features__list">
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__text icon--ice-cream">
                 Всё наше мороженое изготавливается на собственном производстве с
                 использованием современного оборудования и проверенных временем
                 технологий.
               </p>
             </li>
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__text icon--ice-cow">
                 Закупка ингредиентов производится только у проверенных
                 фермерских хозяйств, с которыми нас связывает долговременное
                 сотрудничество.
               </p>
             </li>
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__text icon--leaf">
                 Для приготовления мороженого используются сливки и молоко
                 высочайшего качества. Все ингредиенты и добавки произведены из
                 натурального сырья.
               </p>
             </li>
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__text icon--thermometer">
                 Доставка нашего мороженого осуществляется в специальном
                 термопаке, который не даёт мороженому растаять и позволяет
                 сохранить превосходный вкус.
@@ -99,6 +251,79 @@
             </li>
           </ul>
         </div>
+      </section>
+
+      <div class="index-columns">
+        <article class="blog">
+          <p class="blog__text">Новое в нашем блоге</p>
+          <h2 class="blog__title">
+            10 способов сервировки фруктовых щербетов к столу
+          </h2>
+        </article>
+
+        <section class="mailing-list">
+          <div class="mailing-list__wrapper">
+            <h2 class="visually-hidden">Рассылка</h2>
+            <form action="" class="mailing-list__form">
+              <p class="mailing-list__text">
+                Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
+                всего самого вкусного, что у нас происходит. Обещаем не спамить
+                и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <input
+                type="text"
+                class="mailing-list__input input"
+                placeholder="email@example.com"
+              />
+              <button class="button">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <section class="delivery">
+        <div class="delivery__description">
+          <h2 class="delivery__title title">
+            Доставка любимого мороженого на дом
+          </h2>
+          <p class="delivery__text">
+            Хочется полакомиться любимым дессертом, но нет времени съездить в
+            магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
+            ваш заказ в течение часа!
+          </p>
+        </div>
+
+        <form action="" class="delivery__form">
+          <p class="delivery__text">
+            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
+            подтвердить заказ.
+          </p>
+          <div class="form__wrapper">
+            <label for="" class="delivery__label"
+              >Дата<input
+                type="text"
+                class="delivery__input input"
+                placeholder="01.04.2020"
+            /></label>
+
+            <label for="" class="delivery__label"
+              >Телефон
+              <input
+                type="text"
+                class="delivery__input input"
+                placeholder="+7 800 999-00-00"
+            /></label>
+
+            <label for="" class="delivery__label"
+              >Адрес
+              <input
+                type="text"
+                class="delivery__input input"
+                placeholder="ул. Большая Конюшенная, 19/8"
+            /></label>
+          </div>
+          <button class="delivery__button button">Отправить</button>
+        </form>
       </section>
     </main>
 

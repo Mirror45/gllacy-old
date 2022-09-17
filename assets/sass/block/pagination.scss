@@ -1,0 +1,73 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 126px;
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.pagination .button {
+  margin-left: auto;
+}
+
+.pagination__wrapper {
+  margin-left: auto;
+  display: flex;
+}
+
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  padding: 0 8px;
+  color: $basic-extra-dark;
+  text-decoration: none;
+  border-radius: 50%;
+
+  &--current {
+    background-color: $basic-extra-light;
+    border: 1px solid $basic-extra-light;
+
+    &:hover {
+      background-color: rgba(252, 252, 252, 0.3);
+      border-color: $basic-extra-light;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: rgba(252, 252, 252, 0.3);
+      border-color: $basic-extra-dark;
+    }
+  }
+}
+
+.pagination__button {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  @include img(url(/assets/img/filter/Arrow-down.svg));
+  cursor: pointer;
+
+  &:disabled {
+    background-color: transparent;
+    opacity: 0.2;
+  }
+
+  &:first-child {
+    margin-right: 16px;
+    transform: rotate(90deg);
+  }
+
+  &:last-child {
+    margin-left: 16px;
+    transform: rotate(-90deg);
+  }
+}

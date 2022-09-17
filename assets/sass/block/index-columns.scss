@@ -1,0 +1,55 @@
+.index-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 76px;
+}
+
+.blog {
+  padding: 32px;
+  padding-bottom: 63px;
+  background-image: url(/assets/img/blog/blog-bg.jpg);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.blog__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.blog__title {
+  padding: 0;
+  margin: 0;
+  width: 303px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $basic-extra-dark;
+}
+
+.mailing-list {
+  padding: 6px;
+  background-image: url(/assets/img/blog/mailing-list-bg.jpg);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.mailing-list__wrapper {
+  padding: 26px;
+  background-color: $basic-white;
+  border-radius: 16px;
+}
+
+.mailing-list__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.mailing-list__input {
+  width: 321px;
+  margin-right: 24px;
+}
